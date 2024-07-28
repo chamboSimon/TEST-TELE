@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    background-image: url('/images/BACK-GROUND.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif; /* Common sans-serif font */
+    color: #333; /* Dark gray text color for readability */
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.section {
+    padding: 40px 20px; /* Uniform padding inside each section */
+    margin: 80px 0; /* Larger margin to create visible gaps */
+    background:url(images/BACK-GROUND.jpg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Specific styles for each section */
+.header, .schedule-section, .services-section, .content {
+    background:url(images/BACK-GROUND.jpg);
+    border-radius: 10px; /* Optional: Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadows for depth */
+}
+
+.navbar {
+    overflow: hidden; /* Ensures the content is contained within the navigation bar */
+    display: flex; /* Aligns links in a row */
+    justify-content: right; /* Centers the navigation links */
+    background-color:rgba(201, 198, 198, 0.904);/* Set navigation bar background to black */
+    text-align: center;
+    padding: 10px 0;    
+    width: 100%; /* Ensure the navbar spans the full width */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Optional: adds shadow for depth */
+}
+
+.navbar a {
+    display: inline-flex; /* Makes the links align in a row */
+    text-align: center; /* Aligns text within the links */
+    padding: 14px 20px; /* Padding around the text */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Sets a readable default size for the text */
+    color: white; /* Set text color to white */
+    padding: 10px 20px;
+    align-items: center;
+    
+}
+.navbar a i {
+    margin-right: 8px;  /* Space between the icon and text */
+}
+
+.navbar a:hover {
+    background-color: black; /* Highlight color for hover and the signup button */
+    opacity: 0.5;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.header {
+    margin-top: 10px;
+}
+.header h1 {
+    font-size: 48px; /* Large, bold text */
+    color: #000; /* Black color for the header text */
+    text-align: center;
+    margin-top: 10x;
+}
+
+.header p {
+   margin-top: 5ex;
+    font-size: 24px; /* Smaller text for the sub-header */
+    font-style:italic;
+    text-align: center;
+    color: #666; /* Lighter gray for the sub-header */
+}
+
+.content {
+    text-align: center; /* Center content for aesthetics */
+    padding: 20px;
+    background:url(images/BACK-GROUND.jpg);
+}
+
+.content img {
+    width: 80%; /* Responsive width for the image */
+    max-width: 600px; /* Maximum width to ensure it's not too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space around the image */
+    background:url(images/BACK-GROUND.jpg);
+}
+
+.schedule-section {
+    color: #0b3d91;
+    background:url(images/BACK-GROUND.jpg);
+    padding: 20px;
+    text-align: center;
+}
+
+.schedule-section h2 {
+    color: #0056b3; /* Match the navbar color for consistency */
+}
+
+.schedule-section form {
+    color:black(201, 198, 198, 0.904);/* Set navigation bar background to black */
+    margin: 20px auto; /* Center the form */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width for the form */
+}
+
+.schedule-section input[type="text"],
+.schedule-section input[type="date"],
+.schedule-section input[type="time"] {
+    width: 100%; /* Full width to maximize space */
+    padding: 10px; /* Adequate padding for typing comfort */
+    margin-bottom: 15px; /* Space between each field */
+    border: 1px solid #ccc; /* Subtle border for the input fields */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color:rgba(201, 198, 198, 0.904);/* Set navigation bar background to black */
+}
+.schedule-section button {
+    width: 100%; /* Full-width button */
+    padding: 12px 20px; /* Padding for better clickability */
+    background-color: #0b3d91; /* A bold blue color that matches your brand */
+    color: white; /* White text color for better visibility */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Consistent rounded corners with inputs */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.schedule-section button:hover {
+    background-color: #3da5d9; /* Lighter blue on hover */
+}
+.schedule-section button:active {
+    background-color: #B3D4FC; /* Even lighter blue when clicked */
+}
+
+.services-section {
+    background:url(images/BACK-GROUND.jpg);
+    padding: 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: #0056b3; /* Keep header colors consistent with your theme */
+}
+
+.services-section ul {
+    list-style-type: none; /* No bullets for a cleaner look */
+    padding: 0;
+}
+
+.services-section li {
+    padding: 8px; /* Spacing for each service item */
+    font-size: 16px; /* Readable text size */
+}
+.chat-section h2{
+    color: #0056b3; /* Keep header colors consistent with your theme *
+
+}
+.chat-section {
+    background:url(images/BACK-GROUND.jpg);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Soft edges */
+    margin: 40px 0; /* Ample space around the section */
+}
+
+.chat-interface {
+    background:url(images/BACK-GROUND.jpg);
+    border: 1px solid #ddd; /* Subtle border */
+    padding: 20px;
+    min-height: 200px; /* Minimum height to visualize where the chatbot would appear */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+.footer-content a {
+    color: #333; /* Icon color */
+    margin: 10px 20px;
+    text-align: center; /* Center align the icon and text */
+    display: inline-block; /* Necessary for vertical alignment of text under icons */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.footer-content a span {
+    display: block; /* Makes the text appear below the icon */
+    font-size: 14px; /* Smaller font size for text */
+    color: #666; /* Darker text color for contrast */
+}
+
+.footer-content .social-links, .footer-content .app-links {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    flex-wrap: wrap; /* Allows wrapping if space is insufficient */
+}
+
+
+.footer-content a {
+    color: #333; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Adjust icon size */
+}
+
+.footer-content a:hover {
+    color: #0056b3; /* Icon color on hover */
+}
+
+
+
+footer {
+    margin-bottom: 20px;
+    background:url(images/BACK-GROUND.jpg);
+    text-align: center;
+    padding: 20px;
+}
+    @media (max-width: 768px) {
+    .header h1 {
+        font-size: 32px; /* Smaller font size on mobile */
+    }
+
+    .header p {
+        font-size: 18px; /* Smaller sub-header on mobile */
+    }
+    }
+.content img {
+    width: 80%; /* Responsive width for the image */
+    max-width: 600px; /* Maximum width to ensure it's not too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Space around the image */
+    border-radius: 20px; /* Rounded edges, adjust the px value as needed */
+}
+

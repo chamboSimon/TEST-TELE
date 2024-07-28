@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telehealth Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#schedule"><i class="fas fa-calendar-alt"></i> Schedule Appointment</a>
+            <a href="#services"><i class="fas fa-briefcase-medical"></i> Services</a>
+            <a href="#chat"><i class="fas fa-comments"></i> Chat</a>
+            <a href="signup.html" class="signup-btn"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </nav>
+        
+    </header>
+    <div id="home" class="header section">
+        <div class="header">
+          <h1>WELCOME TO TELEHEALTH SERVICES!</h1>
+          <p>Connecting you with healthcare virtually, anytime, anywhere.</p>
+        </div>
+       <div class="content section">
+        <img src="images/front page.jpeg" alt="Healthcare professional using telehealth">
+       </div>
+    
+
+       
+
+       <div id="schedule" class="schedule-section section">
+        <h2>Schedule Your Appointment</h2>
+        <p>Book a virtual appointment with our healthcare specialists at your convenience.</p>
+        <form action="#" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+            <input type="date" id="date" name="date" placeholder="Date" required><br><br>
+            <input type="time" id="time" name="time" placeholder="Time" required><br><br>
+            <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    
+   
+     <!--services section-->
+      <div id="services" class="services-section section">
+        <h2>Our Services</h2>
+        <p>Explore the variety of healthcare services we offer virtually:</p>
+        <ul>
+            <li>General Consultations</li>
+            <li>Specialty Care</li>
+            <li>Mental Health Support</li>
+            <li>Prescription Services</li>
+            <li>Wellness and Prevention</li>
+        </ul>
+      </div>
+    </div>
+  <!-- Chatbot Section -->
+ <div id="chat" class="chat-section section">
+    <h2>Text Our Chatbot anytime, anywhere</h2>
+    <p>While you wait for your appointment, our AI-powered chatbot can assist you with general inquiries, provide information about medicine, and more.</p>
+    <!-- Placeholder for chatbot interface -->
+    <div class="chat-interface">
+        <p><em>Chatbot interface would appear here. Implementations could include integrated third-party services or custom-built solutions.</em></p>
+    </div>
+ </div>
+ 
+
+ <footer>
+    <div class="footer-content">
+        <p>Connect with us:</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+        <p>Download our app:</p>
+        <div class="app-links">
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-apple"></i>
+                <span>App Store</span>
+            </a>
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-google-play"></i>
+                <span>Google Play</span>
+            </a>
+        </div>
+    </div>
+    <p>Copyright © 2024 Your Website Name</p>
+</footer>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Find all links with hashes
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+        
+                    // Scroll to the specific section smoothly
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        </script>
+          
+</body>
+</html>
+
+
+
+                                
